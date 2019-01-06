@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import firebase from 'firebase';
 import { Header } from './components/common';
+import LoginForm from './components/LoginForm';
 
 class App extends Component {
     //WARNING! To be deprecated in React v17. Use componentDidMount instead.
@@ -19,7 +20,7 @@ class App extends Component {
         return (
             <View>
                 <Header headerText="Auth" />
-                <Text>Ésta es una app</Text>
+                <LoginForm />
             </View>
         );
     }

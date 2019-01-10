@@ -9,6 +9,7 @@ class LoginForm extends Component {git
             <Card>
                 <CardSection>
                     <Input
+                        label="Email"
                         value={this.state.text}
                         onChangeText={text => this.setState({ text: text })}
                     />

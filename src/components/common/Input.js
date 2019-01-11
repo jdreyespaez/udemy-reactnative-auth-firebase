@@ -9,10 +9,10 @@ const Input = ({ label, value, onChangeText }) => {
         <View style={containerStyle}>
             <Text style={labelStyle}>{label}</Text>
             <TextInput
+                autoCorrect={false}
                 style={inputStyle}
                 value={value}
                 onChangeText={onChangeText}
-                style={{ height: 20, width: 100 }}
             />
         </View>
     )  
@@ -25,7 +25,9 @@ const styles = {
         paddingLeft: 5,
         fontSize: 18,
         lineHeight: 23,
-        flex: 2
+        flex: 2,
+        height: 20, 
+        width: 100 
     }, 
     labelStyle: {
         fontSize: 18,

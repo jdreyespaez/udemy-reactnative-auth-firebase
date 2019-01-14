@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, Card, CardSection, Input } from './common';
 
 class LoginForm extends Component {git 
-    state = { text: '' };
+    state = { email: '' };
 
     render() {
         return (
@@ -11,8 +11,8 @@ class LoginForm extends Component {git
                     <Input
                         label="Email"
                         placeholder="user@mail.com"
-                        value={this.state.text}
-                        onChangeText={text => this.setState({ text: text })}
+                        value={this.state.email}
+                        onChangeText={email => this.setState({ email })}
                     />
                 </CardSection>
                 <CardSection />

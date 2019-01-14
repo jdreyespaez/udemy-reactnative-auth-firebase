@@ -22,6 +22,7 @@ class LoginForm extends Component {git
                         placeholder="password"
                         value={this.state.password}
                         onChangeText={password => this.setState({ password })}
+                        secureTextEntry={true}
                     />
                 </CardSection>
 

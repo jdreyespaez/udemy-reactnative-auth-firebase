@@ -10,6 +10,7 @@ class LoginForm extends Component {git
                 <CardSection>
                     <Input
                         label="Email"
+                        placeholder="user@mail.com"
                         value={this.state.text}
                         onChangeText={text => this.setState({ text: text })}
                     />

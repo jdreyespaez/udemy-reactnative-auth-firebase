@@ -9,10 +9,13 @@ class LoginForm extends Component {git
     onButtonPress() {
         const { email, password } = this.state;
 
+        this.setState({ error: '' });
+
         firebase.auth().signInWithEmailAndPassword(email, password)
             .catch(() => {
                 firebase.auth().createUserWithEmailAndPassword(email, password)
                     .catch(() => {
+                        console.log('error en consola');
                         this.setState({ error: 'Authentication failed!!!' });
                     });
             }); 
@@ -59,8 +62,7 @@ const styles = {
         fontSize: 20,
         alignSelf: 'center',
         color: 'red'
-
     }
-}
+};
 
 export default LoginForm;
